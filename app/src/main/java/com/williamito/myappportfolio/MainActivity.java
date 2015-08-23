@@ -1,9 +1,12 @@
 package com.williamito.myappportfolio;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Context;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,5 +36,53 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    /** Shows a toast after clicks on the Popular Movies button. */
+    public void onPopularMoviesClick(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch my Popular Movies app!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast.makeText(context, text, duration).show();
+    }
+
+    /** Shows a toast after clicks on the Scores App button. */
+    public void onScoresClick(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch my Scores app!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast.makeText(context, text, duration).show();
+    }
+
+    /** Shows a toast after clicks on the Library App button. */
+    public void onLibraryClick(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch my Library app!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast.makeText(context, text, duration).show();
+    }
+
+    /** Shows a toast after clicks on the Build It App button. */
+    public void onBuildItClick(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch my Build It Bigger app!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast.makeText(context, text, duration).show();
+    }
+
+    /** Shows a toast after clicks on the XYZ Reader app button. */
+    public void onXYZReaderClick(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch my XYZ Reader app!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast.makeText(context, text, duration).show();
+    }
+
+    /** Shows a toast after clicks on the capstone app button. */
+    public void onCapstoneClick(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch my capstone app!";
+        int duration = Toast.LENGTH_SHORT;
+        Toast.makeText(context, text, duration).show();
     }
 }
